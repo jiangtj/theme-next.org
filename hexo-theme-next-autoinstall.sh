@@ -40,9 +40,9 @@ echo "=============================================================="
      VERSION=v8.11.4
      DISTRO=linux-x64
      wget https://nodejs.org/dist/$VERSION/node-$VERSION-$DISTRO.tar.xz
-     sudo mkdir /usr/local/lib/nodejs
-     sudo tar -xJvf node-$VERSION-$DISTRO.tar.xz -C /usr/local/lib/nodejs 
-     sudo mv /usr/local/lib/nodejs/node-$VERSION-$DISTRO /usr/local/lib/nodejs/node-$VERSION
+     mkdir /usr/local/lib/nodejs
+     tar -xJvf node-$VERSION-$DISTRO.tar.xz -C /usr/local/lib/nodejs 
+     mv /usr/local/lib/nodejs/node-$VERSION-$DISTRO /usr/local/lib/nodejs/node-$VERSION
      export NODEJS_HOME=/usr/local/lib/nodejs/node-$VERSION/bin
      export PATH=$NODEJS_HOME:$PATH
 
