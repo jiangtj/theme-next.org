@@ -39,7 +39,7 @@ echo " Installing Node..."
 echo "=============================================================="
      VERSION=v8.11.4
      DISTRO=linux-x64
-     wget https://nodejs.org/dist/v10.14.2/node-$VERSION-$DISTRO.tar.xz
+     wget https://nodejs.org/dist/$VERSION/node-$VERSION-$DISTRO.tar.xz
      sudo mkdir /usr/local/lib/nodejs
      sudo tar -xJvf node-$VERSION-$DISTRO.tar.xz -C /usr/local/lib/nodejs 
      sudo mv /usr/local/lib/nodejs/node-$VERSION-$DISTRO /usr/local/lib/nodejs/node-$VERSION
