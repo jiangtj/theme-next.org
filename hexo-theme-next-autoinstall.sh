@@ -36,6 +36,7 @@ echo "=============================================================="
      # tar -xJvf node-$VERSION-$DISTRO.tar.xz
      # export NODEJS_HOME=node-$VERSION-$DISTRO/bin
      # export PATH=$NODEJS_HOME:$PATH
+     wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
      nvm install 8.11.4
      node -v
      npm -v
