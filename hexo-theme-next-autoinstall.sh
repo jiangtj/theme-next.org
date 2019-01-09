@@ -24,25 +24,20 @@ C_NO_BOLD="$alignment ${red}[ ${bold} NO ${red} ]${norm}\n"
 # Arguments.
 EXPECTED_ARGS=1
 
-if [ $# -ne $EXPECTED_ARGS ]; then
-    read -p "Enter root directory name for your blog (press enter to default \"theme-next.org\"): " DIR_NAME
-    DIR_NAME=${DIR_NAME:-theme-next.org}
-    echo
-    echo -e "${yellow}For command line usage:${norm} $0 ${blue}blogname ${norm}"
-else
-    DIR_NAME="$1"
-fi
+DIR_NAME="site"
 
 echo
 echo "=============================================================="
 echo " Installing Node..."
 echo "=============================================================="
-     VERSION=v8.11.4
-     DISTRO=linux-x64
-     wget https://nodejs.org/dist/$VERSION/node-$VERSION-$DISTRO.tar.xz
-     tar -xJvf node-$VERSION-$DISTRO.tar.xz
-     export NODEJS_HOME=node-$VERSION-$DISTRO/bin
-     export PATH=$NODEJS_HOME:$PATH
+     # VERSION=v8.11.4
+     # DISTRO=linux-x64
+     # wget https://nodejs.org/dist/$VERSION/node-$VERSION-$DISTRO.tar.xz
+     # tar -xJvf node-$VERSION-$DISTRO.tar.xz
+     # export NODEJS_HOME=node-$VERSION-$DISTRO/bin
+     # export PATH=$NODEJS_HOME:$PATH
+     node -v
+     npm -v
 
 echo
 echo "=============================================================="
