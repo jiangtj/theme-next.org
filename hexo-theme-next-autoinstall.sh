@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -l
 # ================================================================== #
 # Shell script to autoinstall Hexo & NexT & NexT website source.
 # ================================================================== #
@@ -36,8 +36,8 @@ echo "=============================================================="
      # tar -xJvf node-$VERSION-$DISTRO.tar.xz
      # export NODEJS_HOME=node-$VERSION-$DISTRO/bin
      # export PATH=$NODEJS_HOME:$PATH
-     export PATH=/opt/buildhome/.nvm:$PATH
-     nvm install 8.11.4
+     # export PATH=/opt/buildhome/.nvm:$PATH
+     # nvm install 8.11.4
      node -v
      npm -v
 
