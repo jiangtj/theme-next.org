@@ -1,8 +1,8 @@
-#!/bin/sh -l
+#!/bin/sh
 # ================================================================== #
 # Shell script to autoinstall Hexo & NexT & NexT website source.
 # ================================================================== #
-PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin:$PATH
 export PATH
 
 red='\033[00;31m'
