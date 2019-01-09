@@ -41,7 +41,6 @@ echo "=============================================================="
      node -v
      npm -v
      npm install hexo-cli -g
-     pwd
 
 echo
 echo "=============================================================="
@@ -85,16 +84,14 @@ echo "=============================================================="
 
 echo
 echo "=============================================================="
-echo " Cloning NexT website \"source\" branch & Creating symlinks..."
+echo " Creating symlinks..."
 echo "=============================================================="
-    git clone -b source --single-branch https://github.com/theme-next/theme-next.org.git next-source
-    ln -s next-source/source source
-    ln -s source/../_config.yml _config.yml
+    ln -s ../source source
+    ln -s ../_config.yml _config.yml
 
 echo
 echo "=============================================================="
 echo " Strarting Hexo server on \"http://localhost:4000\"..."
 echo "=============================================================="
-    pwd
     hexo g
 echo
