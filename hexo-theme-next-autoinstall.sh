@@ -30,12 +30,13 @@ echo
 echo "=============================================================="
 echo " Installing Node..."
 echo "=============================================================="
-     VERSION=v8.11.4
-     DISTRO=linux-x64
-     wget https://nodejs.org/dist/$VERSION/node-$VERSION-$DISTRO.tar.xz
-     tar -xJvf node-$VERSION-$DISTRO.tar.xz
-     export NODEJS_HOME=node-$VERSION-$DISTRO/bin
-     export PATH=$NODEJS_HOME:$PATH
+     # VERSION=v8.11.4
+     # DISTRO=linux-x64
+     # wget https://nodejs.org/dist/$VERSION/node-$VERSION-$DISTRO.tar.xz
+     # tar -xJvf node-$VERSION-$DISTRO.tar.xz
+     # export NODEJS_HOME=node-$VERSION-$DISTRO/bin
+     # export PATH=$NODEJS_HOME:$PATH
+     nvm install 8.11.4
      node -v
      npm -v
 
